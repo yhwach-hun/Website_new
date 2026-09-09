@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>38 Gym Website Demos | Yhwach</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+    body { background: #0a0a0a; color: #fff; padding: 40px 20px; }
+    .container { max-width: 1400px; margin: 0 auto; }
+    h1 { text-align: center; font-size: 2.8rem; margin-bottom: 10px; color: #00ff88; }
+    .subtitle { text-align: center; color: #888; margin-bottom: 50px; font-size: 1.1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
+    .card { background: #111; border: 1px solid #2a2a2a; border-radius: 14px; padding: 20px; transition: 0.3s; }
+    .card:hover { transform: translateY(-6px); border-color: #00ff88; box-shadow: 0 10px 30px rgba(0,255,136,0.15); }
+    .card h3 { color: #00ff88; margin-bottom: 8px; text-transform: capitalize; font-size: 1rem; }
+    .btn { display: inline-block; background: #00ff88; color: #000; padding: 9px 16px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+    .btn:hover { background: #00cc6a; }
+    .footer { text-align: center; margin-top: 60px; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💪 38 Gym Website Demos</h1>
+    <p class="subtitle">Click any gym to view the live demo</p>
+    
+    <div class="grid">
+      <div class="card"><h3>A Plus Fitness</h3><a href="a-plus-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Barnyard Fitness</h3><a href="barnyard-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Body By DJ Studios</h3><a href="body-by-dj-studios/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Champion Fitness</h3><a href="champion-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>CTX Barbell</h3><a href="ctx-barbell/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Debs Gym</h3><a href="debs-gym/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Deland Fitness Studio</h3><a href="deland-fitness-studio/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Downtown Athletic Club</h3><a href="downtown-athletic-club/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Elite Body Fitness</h3><a href="elite-body-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Elite Fitclub</h3><a href="elite-fitclub/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Elite Squad Gym</h3><a href="elite-squad-gym/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Evolve Fitness Tampa</h3><a href="evolve-fitness-tampa/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Fitness 31</h3><a href="fitness-31/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Fitness Nation</h3><a href="fitness-nation/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Flex Fitness</h3><a href="flex-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Forge Fitness</h3><a href="forge-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Grit Fitness</h3><a href="grit-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Iron Paradise</h3><a href="iron-paradise/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Legacy Fitness</h3><a href="legacy-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Lion's Den Gym</h3><a href="lions-den-gym/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Muscle Factory</h3><a href="muscle-factory/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Next Level Fitness</h3><a href="next-level-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Prime Fitness</h3><a href="prime-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Pro Fitness Hub</h3><a href="pro-fitness-hub/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Rep House Gym</h3><a href="rep-house-gym/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Rise Fitness</h3><a href="rise-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Rock Solid Fitness</h3><a href="rock-solid-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Steel Gym</h3><a href="steel-gym/" class="btn">View Demo</a></div>
+      <div class="card"><h3>The Dam Gym</h3><a href="the-dam-gym/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Titan Fitness</h3><a href="titan-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Ultimate Fitness</h3><a href="ultimate-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Velocity Fitness</h3><a href="velocity-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Warrior Gym</h3><a href="warrior-gym/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Wild Fitness</h3><a href="wild-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Woods Family Fitness</h3><a href="woods-family-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Xtreme Fitness</h3><a href="xtreme-fitness/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Zenith Gym</h3><a href="zenith-gym/" class="btn">View Demo</a></div>
+      <div class="card"><h3>Alpha Performance</h3><a href="alpha-performance/" class="btn">View Demo</a></div>
+    </div>
+    
+    <div class="footer">
+      <p>Want your gym website customized? DM me</p>
+    </div>
+  </div>
+</body>
+</html>
