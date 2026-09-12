@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evolve Fitness Tampa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #17181A;
+    --concrete: #EDEAE3;
+    --accent: #FFC53D;
+    --forest: #1F3D2B;
+    --line: rgba(255,255,255,0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Archivo', sans-serif;
+    background: var(--ink);
+    color: var(--concrete);
+    overflow-x: hidden;
+  }
+  a { color: inherit; }
+  nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px 6vw; position: relative; z-index: 10;
+  }
+  .nav-name { font-family: 'Anton', sans-serif; font-size: 1.1rem; letter-spacing: 0.02em; text-transform: uppercase; }
+  .nav-cta {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em;
+    border: 1px solid var(--concrete); padding: 8px 16px; border-radius: 2px; text-decoration: none; transition: all 0.2s;
+  }
+  .nav-cta:hover { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+  .hero { padding: 8vh 6vw 10vh; position: relative; }
+  .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent);
+    text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px;
+  }
+  .hero-eyebrow::before { content: "\25CF "; }
+  .hero h1 {
+    font-family: 'Anton', sans-serif; font-size: clamp(2.8rem, 9vw, 6.5rem); line-height: 0.95;
+    letter-spacing: -0.01em; text-transform: uppercase; margin-bottom: 28px; max-width: 14ch;
+  }
+  .hero-body { max-width: 46ch; font-size: 1.05rem; line-height: 1.6; color: rgba(237,234,227,0.75); margin-bottom: 34px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary {
+    font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 0.92rem; background: var(--accent);
+    color: var(--ink); padding: 15px 28px; border-radius: 2px; text-decoration: none; display: inline-block;
+  }
+  .btn-secondary {
+    font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 0.92rem; border: 1px solid var(--line);
+    color: var(--concrete); padding: 15px 28px; border-radius: 2px; text-decoration: none; display: inline-block;
+  }
+  .stat-strip {
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,0.02);
+    overflow: hidden; position: relative; padding: 26px 0;
+  }
+  .stat-track { display: flex; gap: 0; width: max-content; animation: ticker 28s linear infinite; }
+  .stat-track:hover { animation-play-state: paused; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .stat-item { display: flex; align-items: baseline; gap: 10px; padding: 0 3vw; border-right: 1px solid var(--line); white-space: nowrap; }
+  .stat-num { font-family: 'Anton', sans-serif; font-size: 2.2rem; color: var(--accent); }
+  .stat-label { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(237,234,227,0.6); line-height: 1.2; }
+  @media (prefers-reduced-motion: reduce) { .stat-track { animation: none; } }
+  .about { padding: 12vh 6vw; display: grid; grid-template-columns: 1fr 1.3fr; gap: 6vw; align-items: start; }
+  @media (max-width: 760px) { .about { grid-template-columns: 1fr; } }
+  .about-label { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); }
+  .about-text { font-size: clamp(1.2rem, 2.4vw, 1.6rem); line-height: 1.5; font-weight: 500; color: rgba(237,234,227,0.92); }
+  .cta-block { margin: 0 6vw 12vh; background: var(--forest); border-radius: 6px; padding: 8vh 6vw; text-align: center; }
+  .cta-block h2 { font-family: 'Anton', sans-serif; font-size: clamp(1.8rem, 5vw, 3.2rem); text-transform: uppercase; margin-bottom: 18px; line-height: 1.05; }
+  .cta-block p { color: rgba(237,234,227,0.75); margin-bottom: 30px; font-size: 1rem; }
+  footer { padding: 5vh 6vw; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: rgba(237,234,227,0.55); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-name">Evolve Fitness Tampa</div>
+  <a href="#join" class="nav-cta">Book a free consult</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">TAMPA, FLORIDA</div>
+  <h1>YOUR GOALS. OUR PLAN.</h1>
+  <p class="hero-body">Evolve Fitness Tampa is a semi-private training studio in Midtown Tampa, built by owners Milly and Travis around 1:1 coaching and a tight-knit member community that shows up for each other.</p>
+  <div class="hero-actions">
+    <a href="#join" class="btn-primary">Book a free consult</a>
+    <a href="#about" class="btn-secondary">Learn more</a>
+  </div>
+</section>
+
+<div class="stat-strip">
+  <div class="stat-track">
+    <div class="stat-item"><span class="stat-num">5+</span><span class="stat-label">YEARS<br>IN MIDTOWN</span></div>
+    <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">OWNER-<br>COACHES</span></div>
+    <div class="stat-item"><span class="stat-num">1:1</span><span class="stat-label">COACHING<br>STYLE</span></div>
+    <div class="stat-item"><span class="stat-num">TAMPA</span><span class="stat-label">HOME<br>BASE</span></div>
+    <div class="stat-item"><span class="stat-num">5+</span><span class="stat-label">YEARS<br>IN MIDTOWN</span></div>
+    <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">OWNER-<br>COACHES</span></div>
+    <div class="stat-item"><span class="stat-num">1:1</span><span class="stat-label">COACHING<br>STYLE</span></div>
+    <div class="stat-item"><span class="stat-num">TAMPA</span><span class="stat-label">HOME<br>BASE</span></div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="about-label">WHO WE ARE</div>
+  <div class="about-text">Evolve Fitness Tampa is a semi-private training studio in Midtown Tampa, built by owners Milly and Travis around 1:1 coaching and a tight-knit member community that shows up for each other.</div>
+</section>
+
+<section class="cta-block" id="join">
+  <h2>Ready to start?</h2>
+  <p>Reach out and we'll get you set up — no pressure, just a conversation.</p>
+  <a href="tel:8134330765" class="btn-primary">Book a free consult</a>
+</section>
+
+<footer>
+  <div>EVOLVE FITNESS TAMPA — TAMPA, FL</div>
+  <div>(813) 433-0765</div>
+</footer>
+
+</body>
+</html>
